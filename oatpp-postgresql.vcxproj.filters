@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="mapping">
+      <UniqueIdentifier>{B1D0B9B4-1DB0-3850-26C8-C32692269FB1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mapping\type">
+      <UniqueIdentifier>{8214D161-6E77-6006-17FD-98BC033F2C89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ql_template">
+      <UniqueIdentifier>{DD4AF12A-4900-6A20-D2F4-63F73EA96024}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\oatpp-postgresql\Connection.hpp" />
+    <ClInclude Include="src\oatpp-postgresql\ConnectionProvider.hpp" />
+    <ClInclude Include="src\oatpp-postgresql\Executor.hpp" />
+    <ClInclude Include="src\oatpp-postgresql\QueryResult.hpp" />
+    <ClInclude Include="src\oatpp-postgresql\Types.hpp" />
+    <ClInclude Include="src\oatpp-postgresql\mapping\Deserializer.hpp">
+      <Filter>mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="src\oatpp-postgresql\mapping\Oid.hpp">
+      <Filter>mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="src\oatpp-postgresql\mapping\PgArray.hpp">
+      <Filter>mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="src\oatpp-postgresql\mapping\ResultMapper.hpp">
+      <Filter>mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="src\oatpp-postgresql\mapping\Serializer.hpp">
+      <Filter>mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="src\oatpp-postgresql\mapping\type\Uuid.hpp">
+      <Filter>mapping\type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\oatpp-postgresql\orm.hpp" />
+    <ClInclude Include="src\oatpp-postgresql\ql_template\Parser.hpp">
+      <Filter>ql_template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\oatpp-postgresql\ql_template\TemplateValueProvider.hpp">
+      <Filter>ql_template</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\oatpp-postgresql\Connection.cpp" />
+    <ClCompile Include="src\oatpp-postgresql\ConnectionProvider.cpp" />
+    <ClCompile Include="src\oatpp-postgresql\Executor.cpp" />
+    <ClCompile Include="src\oatpp-postgresql\QueryResult.cpp" />
+    <ClCompile Include="src\oatpp-postgresql\mapping\Deserializer.cpp">
+      <Filter>mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oatpp-postgresql\mapping\PgArray.cpp">
+      <Filter>mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oatpp-postgresql\mapping\ResultMapper.cpp">
+      <Filter>mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oatpp-postgresql\mapping\Serializer.cpp">
+      <Filter>mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oatpp-postgresql\mapping\type\Uuid.cpp">
+      <Filter>mapping\type</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oatpp-postgresql\ql_template\Parser.cpp">
+      <Filter>ql_template</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oatpp-postgresql\ql_template\TemplateValueProvider.cpp">
+      <Filter>ql_template</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
