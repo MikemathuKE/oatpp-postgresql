@@ -19,7 +19,8 @@ project "oatpp-postgresql"
 
     defines {
         "OATPP_DISABLE_ENV_OBJECT_COUNTERS=ON",
-        "OATPP_BUILD_TESTS=OFF"
+        "OATPP_BUILD_TESTS=OFF",
+        "_CRT_SECURE_NO_WARNINGS"
     }
     
     links {
@@ -30,7 +31,15 @@ project "oatpp-postgresql"
         systemversion "latest"
 
         includedirs {
-        "C:/Program Files/PostgreSQL/16/include"
+            "C:/Program Files/PostgreSQL/16/include"
+        }
+
+        libdirs {
+            "C:/Program Files/PostgreSQL/16/lib"
+        }
+
+        links {
+            "libpq.lib"
         }
 
     filter "configurations:Debug"
