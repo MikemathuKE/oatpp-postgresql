@@ -35,11 +35,23 @@ project "oatpp-postgresql"
         }
 
         libdirs {
-            "C:/Program Files/PostgreSQL/16/lib"
+            "C:/Program Files/PostgreSQL/16/lib",
+            "%{prj.location}/vendor/oatpp/bin" .. outputdir .. "/oatpp"
         }
 
         links {
             "libpq.lib"
+        }
+
+    filter "system:linux"
+        systemversion "latest"
+
+        includedirs {
+            "/usr/include/postgresql"
+        }
+
+        libdirs {
+            "%{prj.location}/vendor/oatpp/bin" .. outputdir .. "/oatpp"
         }
 
     filter "configurations:Debug"
