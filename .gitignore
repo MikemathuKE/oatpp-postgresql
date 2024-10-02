@@ -51,3 +51,7 @@ build/
 *.idb
 *.pdb
 *.vcxproj
+bin/
+bin-int/
+*/bin/
+*/bin-int/
